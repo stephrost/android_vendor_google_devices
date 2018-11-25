@@ -1,7 +1,9 @@
 # [2018-11-24] Auto-generated file, do not edit
 
 PRODUCT_COPY_FILES += \
+    vendor/google_devices/walleye/proprietary/bin/move_widevine_data.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/move_widevine_data.sh:google \
     vendor/google_devices/walleye/proprietary/bin/ramoops:$(TARGET_COPY_OUT_SYSTEM)/bin/ramoops:google \
+    vendor/google_devices/walleye/proprietary/etc/ambient/matcher_tah.leveldb:$(TARGET_COPY_OUT_SYSTEM)/etc/ambient/matcher_tah.leveldb:google \
     vendor/google_devices/walleye/proprietary/etc/cne/Nexus/ATT/ATT_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/ATT/ATT_profiles.xml:google \
     vendor/google_devices/walleye/proprietary/etc/cne/Nexus/ROW/ROW_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/ROW/ROW_profiles.xml:google \
     vendor/google_devices/walleye/proprietary/etc/cne/Nexus/VZW/VZW_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/VZW/VZW_profiles.xml:google \
@@ -9,6 +11,7 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/proprietary/etc/firmware/dnd.sound_model:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/dnd.sound_model:google \
     vendor/google_devices/walleye/proprietary/etc/firmware/music_detector.descriptor:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/music_detector.descriptor:google \
     vendor/google_devices/walleye/proprietary/etc/firmware/music_detector.sound_model:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/music_detector.sound_model:google \
+    vendor/google_devices/walleye/proprietary/etc/old-apns-conf.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/old-apns-conf.xml:google \
     vendor/google_devices/walleye/proprietary/etc/permissions/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.telephony.euicc.xml:google \
     vendor/google_devices/walleye/proprietary/etc/permissions/com.android.omadm.service.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.android.omadm.service.xml:google \
     vendor/google_devices/walleye/proprietary/etc/permissions/com.android.sdm.plugins.connmo.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.android.sdm.plugins.connmo.xml:google \
@@ -32,13 +35,16 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/proprietary/etc/sysconfig/google.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/google.xml:google \
     vendor/google_devices/walleye/proprietary/etc/sysconfig/nexus.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/nexus.xml:google \
     vendor/google_devices/walleye/proprietary/etc/sysconfig/pixel_2017_exclusive.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/pixel_2017_exclusive.xml:google \
-    vendor/google_devices/walleye/proprietary/etc/sysconfig/pixel_2017.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/pixel_2017.xml:google \
+    vendor/google_devices/walleye/proprietary/etc/sysconfig/pixel_experience_2017.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/pixel_experience_2017.xml:google \
     vendor/google_devices/walleye/proprietary/etc/sysconfig/whitelist_com.android.omadm.service.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/whitelist_com.android.omadm.service.xml:google \
+    vendor/google_devices/walleye/proprietary/lib64/com.qualcomm.qti.ims.radio@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/com.qualcomm.qti.ims.radio@1.0.so:google \
     vendor/google_devices/walleye/proprietary/lib64/com.qualcomm.qti.imsrtpservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/com.qualcomm.qti.imsrtpservice@1.0.so:google \
+    vendor/google_devices/walleye/proprietary/lib64/com.qualcomm.qti.qcril.qcrilhook@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/com.qualcomm.qti.qcril.qcrilhook@1.0.so:google \
     vendor/google_devices/walleye/proprietary/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptX_encoder.so:google \
     vendor/google_devices/walleye/proprietary/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptXHD_encoder.so:google \
     vendor/google_devices/walleye/proprietary/lib64/libdiag_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libdiag_system.so:google \
     vendor/google_devices/walleye/proprietary/lib64/libeaselcomm.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libeaselcomm.so:google \
+    vendor/google_devices/walleye/proprietary/lib64/libeaselcontrol.amber.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libeaselcontrol.amber.so:google \
     vendor/google_devices/walleye/proprietary/lib64/libimscamera_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libimscamera_jni.so:google \
     vendor/google_devices/walleye/proprietary/lib64/libimsmedia_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libimsmedia_jni.so:google \
     vendor/google_devices/walleye/proprietary/lib64/lib-imsvideocodec.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/lib-imsvideocodec.so:google \
@@ -46,9 +52,13 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/proprietary/lib64/lib-imsvt.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/lib-imsvt.so:google \
     vendor/google_devices/walleye/proprietary/lib64/lib-imsvtutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/lib-imsvtutils.so:google \
     vendor/google_devices/walleye/proprietary/lib64/librcc.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/librcc.so:google \
+    vendor/google_devices/walleye/proprietary/lib64/vendor.qti.qcril.am@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.qcril.am@1.0.so:google \
+    vendor/google_devices/walleye/proprietary/lib/com.qualcomm.qti.ims.radio@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.qualcomm.qti.ims.radio@1.0.so:google \
     vendor/google_devices/walleye/proprietary/lib/com.qualcomm.qti.imsrtpservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.qualcomm.qti.imsrtpservice@1.0.so:google \
+    vendor/google_devices/walleye/proprietary/lib/com.qualcomm.qti.qcril.qcrilhook@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.qualcomm.qti.qcril.qcrilhook@1.0.so:google \
     vendor/google_devices/walleye/proprietary/lib/libdiag_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libdiag_system.so:google \
     vendor/google_devices/walleye/proprietary/lib/libeaselcomm.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libeaselcomm.so:google \
+    vendor/google_devices/walleye/proprietary/lib/libeaselcontrol.amber.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libeaselcontrol.amber.so:google \
     vendor/google_devices/walleye/proprietary/lib/libimscamera_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libimscamera_jni.so:google \
     vendor/google_devices/walleye/proprietary/lib/libimsmedia_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libimsmedia_jni.so:google \
     vendor/google_devices/walleye/proprietary/lib/lib-imsvideocodec.so:$(TARGET_COPY_OUT_SYSTEM)/lib/lib-imsvideocodec.so:google \
@@ -56,13 +66,14 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/proprietary/lib/lib-imsvt.so:$(TARGET_COPY_OUT_SYSTEM)/lib/lib-imsvt.so:google \
     vendor/google_devices/walleye/proprietary/lib/lib-imsvtutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/lib-imsvtutils.so:google \
     vendor/google_devices/walleye/proprietary/lib/librcc.so:$(TARGET_COPY_OUT_SYSTEM)/lib/librcc.so:google \
+    vendor/google_devices/walleye/proprietary/lib/vendor.qti.qcril.am@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.qti.qcril.am@1.0.so:google \
     vendor/google_devices/walleye/vendor/app/embms/oem/vzw/config_params.xml:$(TARGET_COPY_OUT_VENDOR)/app/embms/oem/vzw/config_params.xml:google \
     vendor/google_devices/walleye/vendor/app/embms/oem/vzw/provisioning_params.xml:$(TARGET_COPY_OUT_VENDOR)/app/embms/oem/vzw/provisioning_params.xml:google \
     vendor/google_devices/walleye/vendor/app/embms/oem/vzw/verizon_config_params.txt:$(TARGET_COPY_OUT_VENDOR)/app/embms/oem/vzw/verizon_config_params.txt:google \
     vendor/google_devices/walleye/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd:google \
     vendor/google_devices/walleye/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon:google \
     vendor/google_devices/walleye/vendor/bin/athdiag:$(TARGET_COPY_OUT_VENDOR)/bin/athdiag:google \
-    vendor/google_devices/walleye/vendor/bin/btnvtool:$(TARGET_COPY_OUT_VENDOR)/bin/btnvtool:google \
+    vendor/google_devices/walleye/vendor/bin/awk:$(TARGET_COPY_OUT_VENDOR)/bin/awk:google \
     vendor/google_devices/walleye/vendor/bin/chre:$(TARGET_COPY_OUT_VENDOR)/bin/chre:google \
     vendor/google_devices/walleye/vendor/bin/cnd:$(TARGET_COPY_OUT_VENDOR)/bin/cnd:google \
     vendor/google_devices/walleye/vendor/bin/cnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/cnss-daemon:google \
@@ -77,37 +88,39 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/bin/ese_load:$(TARGET_COPY_OUT_VENDOR)/bin/ese_load:google \
     vendor/google_devices/walleye/vendor/bin/ese-ls-provision:$(TARGET_COPY_OUT_VENDOR)/bin/ese-ls-provision:google \
     vendor/google_devices/walleye/vendor/bin/ese-replay:$(TARGET_COPY_OUT_VENDOR)/bin/ese-replay:google \
+    vendor/google_devices/walleye/vendor/bin/ftmdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/ftmdaemon:google \
     vendor/google_devices/walleye/vendor/bin/grep:$(TARGET_COPY_OUT_VENDOR)/bin/grep:google \
-    vendor/google_devices/walleye/vendor/bin/hostapd:$(TARGET_COPY_OUT_VENDOR)/bin/hostapd:google \
     vendor/google_devices/walleye/vendor/bin/hostapd_cli:$(TARGET_COPY_OUT_VENDOR)/bin/hostapd_cli:google \
     vendor/google_devices/walleye/vendor/bin/hw/android.hardware.audio@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.audio@2.0-service:google \
-    vendor/google_devices/walleye/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.wahoo:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.wahoo:google \
-    vendor/google_devices/walleye/vendor/bin/hw/android.hardware.bluetooth@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.0-service:google \
+    vendor/google_devices/walleye/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.fpc:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.fpc:google \
+    vendor/google_devices/walleye/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.0-service-qti:google \
     vendor/google_devices/walleye/vendor/bin/hw/android.hardware.boot@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.boot@1.0-service:google \
     vendor/google_devices/walleye/vendor/bin/hw/android.hardware.camera.provider@2.4-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.camera.provider@2.4-service:google \
     vendor/google_devices/walleye/vendor/bin/hw/android.hardware.cas@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.cas@1.0-service:google \
-    vendor/google_devices/walleye/vendor/bin/hw/android.hardware.configstore@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.configstore@1.0-service:google \
+    vendor/google_devices/walleye/vendor/bin/hw/android.hardware.configstore@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.configstore@1.1-service:google \
     vendor/google_devices/walleye/vendor/bin/hw/android.hardware.contexthub@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.contexthub@1.0-service:google \
     vendor/google_devices/walleye/vendor/bin/hw/android.hardware.drm@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.0-service:google \
-    vendor/google_devices/walleye/vendor/bin/hw/android.hardware.drm@1.0-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.0-service.widevine:google \
+    vendor/google_devices/walleye/vendor/bin/hw/android.hardware.drm@1.1-service.clearkey:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.1-service.clearkey:google \
+    vendor/google_devices/walleye/vendor/bin/hw/android.hardware.drm@1.1-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.1-service.widevine:google \
     vendor/google_devices/walleye/vendor/bin/hw/android.hardware.dumpstate@1.0-service.wahoo:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.dumpstate@1.0-service.wahoo:google \
     vendor/google_devices/walleye/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service-qti:google \
     vendor/google_devices/walleye/vendor/bin/hw/android.hardware.gnss@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gnss@1.0-service-qti:google \
     vendor/google_devices/walleye/vendor/bin/hw/android.hardware.graphics.allocator@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.allocator@2.0-service:google \
     vendor/google_devices/walleye/vendor/bin/hw/android.hardware.graphics.composer@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.composer@2.1-service:google \
+    vendor/google_devices/walleye/vendor/bin/hw/android.hardware.health@2.0-service.wahoo:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.health@2.0-service.wahoo:google \
     vendor/google_devices/walleye/vendor/bin/hw/android.hardware.keymaster@3.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@3.0-service-qti:google \
     vendor/google_devices/walleye/vendor/bin/hw/android.hardware.light@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.light@2.0-service:google \
     vendor/google_devices/walleye/vendor/bin/hw/android.hardware.media.omx@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.media.omx@1.0-service:google \
     vendor/google_devices/walleye/vendor/bin/hw/android.hardware.memtrack@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.memtrack@1.0-service:google \
-    vendor/google_devices/walleye/vendor/bin/hw/android.hardware.nfc@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.nfc@1.0-service:google \
+    vendor/google_devices/walleye/vendor/bin/hw/android.hardware.nfc@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.nfc@1.1-service:google \
     vendor/google_devices/walleye/vendor/bin/hw/android.hardware.oemlock@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.oemlock@1.0-service:google \
-    vendor/google_devices/walleye/vendor/bin/hw/android.hardware.power@1.1-service.wahoo:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.power@1.1-service.wahoo:google \
+    vendor/google_devices/walleye/vendor/bin/hw/android.hardware.power@1.2-service.wahoo-libperfmgr:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.power@1.2-service.wahoo-libperfmgr:google \
     vendor/google_devices/walleye/vendor/bin/hw/android.hardware.sensors@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.sensors@1.0-service:google \
     vendor/google_devices/walleye/vendor/bin/hw/android.hardware.usb@1.1-service.wahoo:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.usb@1.1-service.wahoo:google \
-    vendor/google_devices/walleye/vendor/bin/hw/android.hardware.vibrator@1.1-service.wahoo:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.vibrator@1.1-service.wahoo:google \
+    vendor/google_devices/walleye/vendor/bin/hw/android.hardware.vibrator@1.2-service.wahoo:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.vibrator@1.2-service.wahoo:google \
     vendor/google_devices/walleye/vendor/bin/hw/android.hardware.vr@1.0-service.wahoo:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.vr@1.0-service.wahoo:google \
     vendor/google_devices/walleye/vendor/bin/hw/android.hardware.wifi@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.wifi@1.0-service:google \
-    vendor/google_devices/walleye/vendor/bin/hw/android.hardware.wifi.offload@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.wifi.offload@1.0-service:google \
+    vendor/google_devices/walleye/vendor/bin/hw/hostapd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/hostapd:google \
     vendor/google_devices/walleye/vendor/bin/hw/rild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/rild:google \
     vendor/google_devices/walleye/vendor/bin/hw/wpa_supplicant:$(TARGET_COPY_OUT_VENDOR)/bin/hw/wpa_supplicant:google \
     vendor/google_devices/walleye/vendor/bin/imsdatadaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsdatadaemon:google \
@@ -118,19 +131,21 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/bin/init.power.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.power.sh:google \
     vendor/google_devices/walleye/vendor/bin/init.qcom.devstart.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.devstart.sh:google \
     vendor/google_devices/walleye/vendor/bin/init.qcom.ipastart.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.ipastart.sh:google \
+    vendor/google_devices/walleye/vendor/bin/init.qcom.wlan.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.wlan.sh:google \
     vendor/google_devices/walleye/vendor/bin/init.radio.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.radio.sh:google \
     vendor/google_devices/walleye/vendor/bin/ipacm:$(TARGET_COPY_OUT_VENDOR)/bin/ipacm:google \
     vendor/google_devices/walleye/vendor/bin/irsc_util:$(TARGET_COPY_OUT_VENDOR)/bin/irsc_util:google \
     vendor/google_devices/walleye/vendor/bin/KmInstallKeybox:$(TARGET_COPY_OUT_VENDOR)/bin/KmInstallKeybox:google \
     vendor/google_devices/walleye/vendor/bin/loc_launcher:$(TARGET_COPY_OUT_VENDOR)/bin/loc_launcher:google \
+    vendor/google_devices/walleye/vendor/bin/logwrapper:$(TARGET_COPY_OUT_VENDOR)/bin/logwrapper:google \
     vendor/google_devices/walleye/vendor/bin/lowi-server:$(TARGET_COPY_OUT_VENDOR)/bin/lowi-server:google \
     vendor/google_devices/walleye/vendor/bin/msm_irqbalance:$(TARGET_COPY_OUT_VENDOR)/bin/msm_irqbalance:google \
     vendor/google_devices/walleye/vendor/bin/netmgrd:$(TARGET_COPY_OUT_VENDOR)/bin/netmgrd:google \
     vendor/google_devices/walleye/vendor/bin/nl_listener:$(TARGET_COPY_OUT_VENDOR)/bin/nl_listener:google \
     vendor/google_devices/walleye/vendor/bin/oemlock-bridge:$(TARGET_COPY_OUT_VENDOR)/bin/oemlock-bridge:google \
+    vendor/google_devices/walleye/vendor/bin/oemlock-bridge-client:$(TARGET_COPY_OUT_VENDOR)/bin/oemlock-bridge-client:google \
     vendor/google_devices/walleye/vendor/bin/oemlock_provision:$(TARGET_COPY_OUT_VENDOR)/bin/oemlock_provision:google \
     vendor/google_devices/walleye/vendor/bin/pd-mapper:$(TARGET_COPY_OUT_VENDOR)/bin/pd-mapper:google \
-    vendor/google_devices/walleye/vendor/bin/perfd:$(TARGET_COPY_OUT_VENDOR)/bin/perfd:google \
     vendor/google_devices/walleye/vendor/bin/pktlogconf:$(TARGET_COPY_OUT_VENDOR)/bin/pktlogconf:google \
     vendor/google_devices/walleye/vendor/bin/PktRspTest:$(TARGET_COPY_OUT_VENDOR)/bin/PktRspTest:google \
     vendor/google_devices/walleye/vendor/bin/pm-proxy:$(TARGET_COPY_OUT_VENDOR)/bin/pm-proxy:google \
@@ -153,10 +168,10 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/bin/tftp_server:$(TARGET_COPY_OUT_VENDOR)/bin/tftp_server:google \
     vendor/google_devices/walleye/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine:google \
     vendor/google_devices/walleye/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon:google \
+    vendor/google_devices/walleye/vendor/bin/toolbox:$(TARGET_COPY_OUT_VENDOR)/bin/toolbox:google \
     vendor/google_devices/walleye/vendor/bin/toybox_vendor:$(TARGET_COPY_OUT_VENDOR)/bin/toybox_vendor:google \
     vendor/google_devices/walleye/vendor/bin/vndservice:$(TARGET_COPY_OUT_VENDOR)/bin/vndservice:google \
     vendor/google_devices/walleye/vendor/bin/vndservicemanager:$(TARGET_COPY_OUT_VENDOR)/bin/vndservicemanager:google \
-    vendor/google_devices/walleye/vendor/bin/wcnss_filter:$(TARGET_COPY_OUT_VENDOR)/bin/wcnss_filter:google \
     vendor/google_devices/walleye/vendor/bin/WifiLogger_app:$(TARGET_COPY_OUT_VENDOR)/bin/WifiLogger_app:google \
     vendor/google_devices/walleye/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon:google \
     vendor/google_devices/walleye/vendor/etc/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml:google \
@@ -185,34 +200,36 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/etc/fstab.walleye:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.walleye:google \
     vendor/google_devices/walleye/vendor/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf:google \
     vendor/google_devices/walleye/vendor/etc/graphite_ipc_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/graphite_ipc_platform_info.xml:google \
+    vendor/google_devices/walleye/vendor/etc/hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hearing_aid_audio_policy_configuration.xml:google \
     vendor/google_devices/walleye/vendor/etc/init/android.hardware.audio@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio@2.0-service.rc:google \
-    vendor/google_devices/walleye/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.wahoo.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service.wahoo.rc:google \
-    vendor/google_devices/walleye/vendor/etc/init/android.hardware.bluetooth@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service.rc:google \
+    vendor/google_devices/walleye/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.fpc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service.fpc.rc:google \
+    vendor/google_devices/walleye/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:google \
     vendor/google_devices/walleye/vendor/etc/init/android.hardware.boot@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.boot@1.0-service.rc:google \
     vendor/google_devices/walleye/vendor/etc/init/android.hardware.camera.provider@2.4-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.camera.provider@2.4-service.rc:google \
     vendor/google_devices/walleye/vendor/etc/init/android.hardware.cas@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.cas@1.0-service.rc:google \
-    vendor/google_devices/walleye/vendor/etc/init/android.hardware.configstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.configstore@1.0-service.rc:google \
+    vendor/google_devices/walleye/vendor/etc/init/android.hardware.configstore@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.configstore@1.1-service.rc:google \
     vendor/google_devices/walleye/vendor/etc/init/android.hardware.contexthub@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.contexthub@1.0-service.rc:google \
     vendor/google_devices/walleye/vendor/etc/init/android.hardware.drm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.0-service.rc:google \
-    vendor/google_devices/walleye/vendor/etc/init/android.hardware.drm@1.0-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.0-service.widevine.rc:google \
+    vendor/google_devices/walleye/vendor/etc/init/android.hardware.drm@1.1-service.clearkey.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.clearkey.rc:google \
+    vendor/google_devices/walleye/vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.widevine.rc:google \
     vendor/google_devices/walleye/vendor/etc/init/android.hardware.dumpstate@1.0-service.wahoo.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.dumpstate@1.0-service.wahoo.rc:google \
     vendor/google_devices/walleye/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:google \
     vendor/google_devices/walleye/vendor/etc/init/android.hardware.gnss@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss@1.0-service-qti.rc:google \
     vendor/google_devices/walleye/vendor/etc/init/android.hardware.graphics.allocator@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@2.0-service.rc:google \
     vendor/google_devices/walleye/vendor/etc/init/android.hardware.graphics.composer@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@2.1-service.rc:google \
+    vendor/google_devices/walleye/vendor/etc/init/android.hardware.health@2.0-service.wahoo.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.health@2.0-service.wahoo.rc:google \
     vendor/google_devices/walleye/vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@3.0-service-qti.rc:google \
     vendor/google_devices/walleye/vendor/etc/init/android.hardware.light@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.light@2.0-service.rc:google \
     vendor/google_devices/walleye/vendor/etc/init/android.hardware.media.omx@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.omx@1.0-service.rc:google \
     vendor/google_devices/walleye/vendor/etc/init/android.hardware.memtrack@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.memtrack@1.0-service.rc:google \
-    vendor/google_devices/walleye/vendor/etc/init/android.hardware.nfc@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.nfc@1.0-service.rc:google \
+    vendor/google_devices/walleye/vendor/etc/init/android.hardware.nfc@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.nfc@1.1-service.rc:google \
     vendor/google_devices/walleye/vendor/etc/init/android.hardware.oemlock@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.oemlock@1.0-service.rc:google \
-    vendor/google_devices/walleye/vendor/etc/init/android.hardware.power@1.1-service.wahoo.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.power@1.1-service.wahoo.rc:google \
+    vendor/google_devices/walleye/vendor/etc/init/android.hardware.power@1.2-service.wahoo-libperfmgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.power@1.2-service.wahoo-libperfmgr.rc:google \
     vendor/google_devices/walleye/vendor/etc/init/android.hardware.sensors@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@1.0-service.rc:google \
     vendor/google_devices/walleye/vendor/etc/init/android.hardware.usb@1.1-service.wahoo.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb@1.1-service.wahoo.rc:google \
-    vendor/google_devices/walleye/vendor/etc/init/android.hardware.vibrator@1.1-service.wahoo.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.vibrator@1.1-service.wahoo.rc:google \
+    vendor/google_devices/walleye/vendor/etc/init/android.hardware.vibrator@1.2-service.wahoo.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.vibrator@1.2-service.wahoo.rc:google \
     vendor/google_devices/walleye/vendor/etc/init/android.hardware.vr@1.0-service.wahoo.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.vr@1.0-service.wahoo.rc:google \
     vendor/google_devices/walleye/vendor/etc/init/android.hardware.wifi@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi@1.0-service.rc:google \
-    vendor/google_devices/walleye/vendor/etc/init/android.hardware.wifi.offload@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi.offload@1.0-service.rc:google \
     vendor/google_devices/walleye/vendor/etc/init/esed.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/esed.rc:google \
     vendor/google_devices/walleye/vendor/etc/init/hostapd.android.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hostapd.android.rc:google \
     vendor/google_devices/walleye/vendor/etc/init/hw/init.wahoo.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.wahoo.usb.rc:google \
@@ -222,11 +239,11 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/etc/init/init.walleye.logging.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.walleye.logging.rc:google \
     vendor/google_devices/walleye/vendor/etc/init/init-walleye.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init-walleye.rc:google \
     vendor/google_devices/walleye/vendor/etc/init.insmod.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.cfg:google \
+    vendor/google_devices/walleye/vendor/etc/init.insmod_charger.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod_charger.cfg:google \
     vendor/google_devices/walleye/vendor/etc/init/rild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/rild.rc:google \
     vendor/google_devices/walleye/vendor/etc/init/vndservicemanager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vndservicemanager.rc:google \
     vendor/google_devices/walleye/vendor/etc/IPACM_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/IPACM_cfg.xml:google \
     vendor/google_devices/walleye/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf:google \
-    vendor/google_devices/walleye/vendor/etc/libnfc-brcm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-brcm.conf:google \
     vendor/google_devices/walleye/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf:google \
     vendor/google_devices/walleye/vendor/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf:google \
     vendor/google_devices/walleye/vendor/etc/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml:google \
@@ -243,6 +260,7 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/etc/permissions/android.hardware.audio.pro.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.pro.xml:google \
     vendor/google_devices/walleye/vendor/etc/permissions/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml:google \
     vendor/google_devices/walleye/vendor/etc/permissions/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml:google \
+    vendor/google_devices/walleye/vendor/etc/permissions/android.hardware.camera.ar.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.ar.xml:google \
     vendor/google_devices/walleye/vendor/etc/permissions/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml:google \
     vendor/google_devices/walleye/vendor/etc/permissions/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml:google \
     vendor/google_devices/walleye/vendor/etc/permissions/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml:google \
@@ -254,6 +272,7 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/etc/permissions/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml:google \
     vendor/google_devices/walleye/vendor/etc/permissions/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml:google \
     vendor/google_devices/walleye/vendor/etc/permissions/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.accelerometer.xml:google \
+    vendor/google_devices/walleye/vendor/etc/permissions/android.hardware.sensor.assist.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.assist.xml:google \
     vendor/google_devices/walleye/vendor/etc/permissions/android.hardware.sensor.barometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.barometer.xml:google \
     vendor/google_devices/walleye/vendor/etc/permissions/android.hardware.sensor.compass.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.compass.xml:google \
     vendor/google_devices/walleye/vendor/etc/permissions/android.hardware.sensor.gyroscope.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.gyroscope.xml:google \
@@ -276,7 +295,9 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/etc/permissions/android.hardware.wifi.aware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.aware.xml:google \
     vendor/google_devices/walleye/vendor/etc/permissions/android.hardware.wifi.direct.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.direct.xml:google \
     vendor/google_devices/walleye/vendor/etc/permissions/android.hardware.wifi.passpoint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.passpoint.xml:google \
+    vendor/google_devices/walleye/vendor/etc/permissions/android.hardware.wifi.rtt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.rtt.xml:google \
     vendor/google_devices/walleye/vendor/etc/permissions/android.hardware.wifi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.xml:google \
+    vendor/google_devices/walleye/vendor/etc/permissions/android.software.device_id_attestation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.device_id_attestation.xml:google \
     vendor/google_devices/walleye/vendor/etc/permissions/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml:google \
     vendor/google_devices/walleye/vendor/etc/permissions/android.software.sip.voip.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.sip.voip.xml:google \
     vendor/google_devices/walleye/vendor/etc/permissions/cneapiclient.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/cneapiclient.xml:google \
@@ -284,27 +305,31 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/etc/permissions/com.quicinc.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.quicinc.cne.xml:google \
     vendor/google_devices/walleye/vendor/etc/permissions/embms.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/embms.xml:google \
     vendor/google_devices/walleye/vendor/etc/permissions/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml:google \
+    vendor/google_devices/walleye/vendor/etc/permissions/LowPowerMonitorDeviceInterface.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/LowPowerMonitorDeviceInterface.xml:google \
+    vendor/google_devices/walleye/vendor/etc/permissions/LowPowerMonitorDeviceRpm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/LowPowerMonitorDeviceRpm.xml:google \
+    vendor/google_devices/walleye/vendor/etc/permissions/PowerAnomalyDataModemInterface.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/PowerAnomalyDataModemInterface.xml:google \
+    vendor/google_devices/walleye/vendor/etc/permissions/PowerAnomalyQcril.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/PowerAnomalyQcril.xml:google \
     vendor/google_devices/walleye/vendor/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qcrilhook.xml:google \
     vendor/google_devices/walleye/vendor/etc/permissions/qti-vzw-ims-internal.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qti-vzw-ims-internal.xml:google \
     vendor/google_devices/walleye/vendor/etc/permissions/telephonyservice.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/telephonyservice.xml:google \
-    vendor/google_devices/walleye/vendor/etc/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml:google \
+    vendor/google_devices/walleye/vendor/etc/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json:google \
     vendor/google_devices/walleye/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt:google \
     vendor/google_devices/walleye/vendor/etc/qdcm_calib_data_FHD_SAMSUNG_S6E3FA5_5.0_command_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_FHD_SAMSUNG_S6E3FA5_5.0_command_mode_panel.xml:google \
     vendor/google_devices/walleye/vendor/etc/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml:google \
     vendor/google_devices/walleye/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf:google \
-    vendor/google_devices/walleye/vendor/etc/seccomp_policy/configstore@1.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/configstore@1.0.policy:google \
+    vendor/google_devices/walleye/vendor/etc/seccomp_policy/configstore@1.1.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/configstore@1.1.policy:google \
     vendor/google_devices/walleye/vendor/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy:google \
     vendor/google_devices/walleye/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config:google \
-    vendor/google_devices/walleye/vendor/etc/selinux/nonplat_file_contexts:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/nonplat_file_contexts:google \
-    vendor/google_devices/walleye/vendor/etc/selinux/nonplat_hwservice_contexts:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/nonplat_hwservice_contexts:google \
-    vendor/google_devices/walleye/vendor/etc/selinux/nonplat_mac_permissions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/nonplat_mac_permissions.xml:google \
-    vendor/google_devices/walleye/vendor/etc/selinux/nonplat_property_contexts:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/nonplat_property_contexts:google \
-    vendor/google_devices/walleye/vendor/etc/selinux/nonplat_seapp_contexts:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/nonplat_seapp_contexts:google \
-    vendor/google_devices/walleye/vendor/etc/selinux/nonplat_sepolicy.cil:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/nonplat_sepolicy.cil:google \
-    vendor/google_devices/walleye/vendor/etc/selinux/nonplat_service_contexts:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/nonplat_service_contexts:google \
+    vendor/google_devices/walleye/vendor/etc/selinux/plat_pub_versioned.cil:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/plat_pub_versioned.cil:google \
     vendor/google_devices/walleye/vendor/etc/selinux/plat_sepolicy_vers.txt:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/plat_sepolicy_vers.txt:google \
     vendor/google_devices/walleye/vendor/etc/selinux/precompiled_sepolicy:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/precompiled_sepolicy:google \
     vendor/google_devices/walleye/vendor/etc/selinux/precompiled_sepolicy.plat_and_mapping.sha256:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/precompiled_sepolicy.plat_and_mapping.sha256:google \
+    vendor/google_devices/walleye/vendor/etc/selinux/vendor_file_contexts:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/vendor_file_contexts:google \
+    vendor/google_devices/walleye/vendor/etc/selinux/vendor_hwservice_contexts:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/vendor_hwservice_contexts:google \
+    vendor/google_devices/walleye/vendor/etc/selinux/vendor_mac_permissions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/vendor_mac_permissions.xml:google \
+    vendor/google_devices/walleye/vendor/etc/selinux/vendor_property_contexts:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/vendor_property_contexts:google \
+    vendor/google_devices/walleye/vendor/etc/selinux/vendor_seapp_contexts:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/vendor_seapp_contexts:google \
+    vendor/google_devices/walleye/vendor/etc/selinux/vendor_sepolicy.cil:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/vendor_sepolicy.cil:google \
     vendor/google_devices/walleye/vendor/etc/selinux/vndservice_contexts:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/vndservice_contexts:google \
     vendor/google_devices/walleye/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf:google \
     vendor/google_devices/walleye/vendor/etc/sensors/sensor_def_wahoo.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_wahoo.conf:google \
@@ -313,6 +338,8 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf:google \
     vendor/google_devices/walleye/vendor/etc/thermal-engine-vr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-vr.conf:google \
     vendor/google_devices/walleye/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml:google \
+    vendor/google_devices/walleye/vendor/etc/vintf/compatibility_matrix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/compatibility_matrix.xml:google \
+    vendor/google_devices/walleye/vendor/etc/vintf/manifest.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest.xml:google \
     vendor/google_devices/walleye/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf:google \
     vendor/google_devices/walleye/vendor/etc/wifi/wifi_concurrency_cfg.txt:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wifi_concurrency_cfg.txt:google \
     vendor/google_devices/walleye/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf:google \
@@ -411,7 +438,6 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/firmware/ipa_fws.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b03:google \
     vendor/google_devices/walleye/vendor/firmware/ipa_fws.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b04:google \
     vendor/google_devices/walleye/vendor/firmware/ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.mdt:google \
-    vendor/google_devices/walleye/vendor/firmware/libpn553_fw.so:$(TARGET_COPY_OUT_VENDOR)/firmware/libpn553_fw.so:google \
     vendor/google_devices/walleye/vendor/firmware/modemuw.jsn:$(TARGET_COPY_OUT_VENDOR)/firmware/modemuw.jsn:google \
     vendor/google_devices/walleye/vendor/firmware/slpi_v2.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/slpi_v2.b00:google \
     vendor/google_devices/walleye/vendor/firmware/slpi_v2.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/slpi_v2.b01:google \
@@ -453,10 +479,10 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/firmware/widevine.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.mdt:google \
     vendor/google_devices/walleye/vendor/firmware/wlanmdsp.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/wlanmdsp.mbn:google \
     vendor/google_devices/walleye/vendor/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini:google \
-    vendor/google_devices/walleye/vendor/lib64/camera.device@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@1.0-impl.so:google \
     vendor/google_devices/walleye/vendor/lib64/camera.device@3.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.2-impl.so:google \
-    vendor/google_devices/walleye/vendor/lib64/camera.device@3.3-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.3-impl.so:google \
+    vendor/google_devices/walleye/vendor/lib64/com.fingerprints.extension@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.fingerprints.extension@1.0.so:google \
     vendor/google_devices/walleye/vendor/lib64/com.qualcomm.qti.ims.radio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.ims.radio@1.0.so:google \
+    vendor/google_devices/walleye/vendor/lib64/com.qualcomm.qti.ims.radio@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.ims.radio@1.1.so:google \
     vendor/google_devices/walleye/vendor/lib64/com.qualcomm.qti.imsrtpservice@1.0-service-Impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.imsrtpservice@1.0-service-Impl.so:google \
     vendor/google_devices/walleye/vendor/lib64/com.qualcomm.qti.imsrtpservice@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.imsrtpservice@1.0_vendor.so:google \
     vendor/google_devices/walleye/vendor/lib64/com.qualcomm.qti.qcril.qcrilhook@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.qcril.qcrilhook@1.0.so:google \
@@ -469,12 +495,10 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/lib64/egl/libGLESv2_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLESv2_adreno.so:google \
     vendor/google_devices/walleye/vendor/lib64/egl/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libq3dtools_adreno.so:google \
     vendor/google_devices/walleye/vendor/lib64/egl/libq3dtools_esx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libq3dtools_esx.so:google \
+    vendor/google_devices/walleye/vendor/lib64/ese_spi_nxp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ese_spi_nxp.so:google \
     vendor/google_devices/walleye/vendor/lib64/hw/activity_recognition.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/activity_recognition.msm8998.so:google \
-    vendor/google_devices/walleye/vendor/lib64/hw/android.hardware.audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.audio@2.0-impl.so:google \
-    vendor/google_devices/walleye/vendor/lib64/hw/android.hardware.audio.effect@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.audio.effect@2.0-impl.so:google \
-    vendor/google_devices/walleye/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.0-impl.so:google \
+    vendor/google_devices/walleye/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so:google \
     vendor/google_devices/walleye/vendor/lib64/hw/android.hardware.boot@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.boot@1.0-impl.so:google \
-    vendor/google_devices/walleye/vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.camera.provider@2.4-impl.so:google \
     vendor/google_devices/walleye/vendor/lib64/hw/android.hardware.contexthub@1.0-impl.generic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.contexthub@1.0-impl.generic.so:google \
     vendor/google_devices/walleye/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so:google \
     vendor/google_devices/walleye/vendor/lib64/hw/android.hardware.gnss@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss@1.0-impl-qti.so:google \
@@ -484,10 +508,8 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so:google \
     vendor/google_devices/walleye/vendor/lib64/hw/android.hardware.light@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.light@2.0-impl.so:google \
     vendor/google_devices/walleye/vendor/lib64/hw/android.hardware.memtrack@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.memtrack@1.0-impl.so:google \
-    vendor/google_devices/walleye/vendor/lib64/hw/android.hardware.nfc@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.nfc@1.0-impl.so:google \
     vendor/google_devices/walleye/vendor/lib64/hw/android.hardware.renderscript@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.renderscript@1.0-impl.so:google \
     vendor/google_devices/walleye/vendor/lib64/hw/android.hardware.sensors@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.sensors@1.0-impl.so:google \
-    vendor/google_devices/walleye/vendor/lib64/hw/android.hardware.thermal@1.1-wahoo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.thermal@1.1-wahoo.so:google \
     vendor/google_devices/walleye/vendor/lib64/hw/audio.primary.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.default.so:google \
     vendor/google_devices/walleye/vendor/lib64/hw/audio.primary.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.msm8998.so:google \
     vendor/google_devices/walleye/vendor/lib64/hw/audio.r_submix.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.r_submix.default.so:google \
@@ -499,7 +521,6 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/lib64/hw/lights.walleye.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/lights.walleye.so:google \
     vendor/google_devices/walleye/vendor/lib64/hw/local_time.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/local_time.default.so:google \
     vendor/google_devices/walleye/vendor/lib64/hw/memtrack.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/memtrack.msm8998.so:google \
-    vendor/google_devices/walleye/vendor/lib64/hw/nfc_nci.walleye.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/nfc_nci.walleye.so:google \
     vendor/google_devices/walleye/vendor/lib64/hw/power.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/power.default.so:google \
     vendor/google_devices/walleye/vendor/lib64/hw/sound_trigger.primary.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sound_trigger.primary.msm8998.so:google \
     vendor/google_devices/walleye/vendor/lib64/hw/vibrator.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vibrator.default.so:google \
@@ -539,9 +560,10 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/lib64/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsi_netctrl.so:google \
     vendor/google_devices/walleye/vendor/lib64/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsutils.so:google \
     vendor/google_devices/walleye/vendor/lib64/libeaselcomm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeaselcomm.so:google \
-    vendor/google_devices/walleye/vendor/lib64/libeaselcontrol.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeaselcontrol.so:google \
+    vendor/google_devices/walleye/vendor/lib64/libeaselcontrol.amber.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeaselcontrol.amber.so:google \
     vendor/google_devices/walleye/vendor/lib64/libeffectsconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeffectsconfig.so:google \
     vendor/google_devices/walleye/vendor/lib64/libeffects.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeffects.so:google \
+    vendor/google_devices/walleye/vendor/lib64/libelmyraproto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libelmyraproto.so:google \
     vendor/google_devices/walleye/vendor/lib64/libese-app-boot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libese-app-boot.so:google \
     vendor/google_devices/walleye/vendor/lib64/libese-app-weaver.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libese-app-weaver.so:google \
     vendor/google_devices/walleye/vendor/lib64/libese_cpp_nxp_pn80t_nq_nci.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libese_cpp_nxp_pn80t_nq_nci.so:google \
@@ -570,6 +592,7 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/lib64/libhdrplusmessenger.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdrplusmessenger.so:google \
     vendor/google_devices/walleye/vendor/lib64/libhexagon_nn_controller.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhexagon_nn_controller.so:google \
     vendor/google_devices/walleye/vendor/lib64/libhwc2on1adapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwc2on1adapter.so:google \
+    vendor/google_devices/walleye/vendor/lib64/libhwc2onfbadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwc2onfbadapter.so:google \
     vendor/google_devices/walleye/vendor/lib64/libhwminijail.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwminijail.so:google \
     vendor/google_devices/walleye/vendor/lib64/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libidl.so:google \
     vendor/google_devices/walleye/vendor/lib64/lib-imsdpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsdpl.so:google \
@@ -589,7 +612,6 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/lib64/liblistensoundmodel2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblistensoundmodel2.so:google \
     vendor/google_devices/walleye/vendor/lib64/libllvm-glnext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libllvm-glnext.so:google \
     vendor/google_devices/walleye/vendor/lib64/libllvm-qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libllvm-qcom.so:google \
-    vendor/google_devices/walleye/vendor/lib64/libllvm-qgl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libllvm-qgl.so:google \
     vendor/google_devices/walleye/vendor/lib64/libloc_api_v02.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_api_v02.so:google \
     vendor/google_devices/walleye/vendor/lib64/liblocation_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocation_api.so:google \
     vendor/google_devices/walleye/vendor/lib64/libloc_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_core.so:google \
@@ -601,7 +623,6 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/lib64/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblqe.so:google \
     vendor/google_devices/walleye/vendor/lib64/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdmdetect.so:google \
     vendor/google_devices/walleye/vendor/lib64/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdsprpc.so:google \
-    vendor/google_devices/walleye/vendor/lib64/libminijail_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminijail_vendor.so:google \
     vendor/google_devices/walleye/vendor/lib64/libmmcamera2_q3a_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera2_q3a_core.so:google \
     vendor/google_devices/walleye/vendor/lib64/libmmcamera2_stats_algorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera2_stats_algorithm.so:google \
     vendor/google_devices/walleye/vendor/lib64/libmmcamera2_stats_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera2_stats_lib.so:google \
@@ -623,6 +644,7 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/lib64/libOmxVenc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxVenc.so:google \
     vendor/google_devices/walleye/vendor/lib64/libp61-jcop-kit.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libp61-jcop-kit.so:google \
     vendor/google_devices/walleye/vendor/lib64/libpdmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpdmapper.so:google \
+    vendor/google_devices/walleye/vendor/lib64/libperfmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfmgr.so:google \
     vendor/google_devices/walleye/vendor/lib64/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperipheral_client.so:google \
     vendor/google_devices/walleye/vendor/lib64/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcci_legacy.so:google \
     vendor/google_devices/walleye/vendor/lib64/libqcmaputils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcmaputils.so:google \
@@ -644,7 +666,6 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/lib64/libqseed3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqseed3.so:google \
     vendor/google_devices/walleye/vendor/lib64/libqservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqservice.so:google \
     vendor/google_devices/walleye/vendor/lib64/libqti-perfd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-perfd-client.so:google \
-    vendor/google_devices/walleye/vendor/lib64/libqti-util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-util.so:google \
     vendor/google_devices/walleye/vendor/lib64/libquipc_os_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libquipc_os_api.so:google \
     vendor/google_devices/walleye/vendor/lib64/lib-rcsimssjni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-rcsimssjni.so:google \
     vendor/google_devices/walleye/vendor/lib64/libreference-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libreference-ril.so:google \
@@ -672,11 +693,8 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/lib64/libsdmextension.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdmextension.so:google \
     vendor/google_devices/walleye/vendor/lib64/libsdmutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdmutils.so:google \
     vendor/google_devices/walleye/vendor/lib64/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdsprpc.so:google \
-    vendor/google_devices/walleye/vendor/lib64/lib-sec-disp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-sec-disp.so:google \
     vendor/google_devices/walleye/vendor/lib64/libSecureUILib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSecureUILib.so:google \
-    vendor/google_devices/walleye/vendor/lib64/libsecureui.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureui.so:google \
     vendor/google_devices/walleye/vendor/lib64/libsecureui_svcsock.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureui_svcsock.so:google \
-    vendor/google_devices/walleye/vendor/lib64/libselinux_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libselinux_vendor.so:google \
     vendor/google_devices/walleye/vendor/lib64/libsensor1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensor1.so:google \
     vendor/google_devices/walleye/vendor/lib64/libsensor_reg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensor_reg.so:google \
     vendor/google_devices/walleye/vendor/lib64/libsettings.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsettings.so:google \
@@ -686,7 +704,6 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/lib64/libstagefrighthw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefrighthw.so:google \
     vendor/google_devices/walleye/vendor/lib64/libStDrvInt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libStDrvInt.so:google \
     vendor/google_devices/walleye/vendor/lib64/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsystem_health_mon.so:google \
-    vendor/google_devices/walleye/vendor/lib64/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthermalclient.so:google \
     vendor/google_devices/walleye/vendor/lib64/libthermalioctl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthermalioctl.so:google \
     vendor/google_devices/walleye/vendor/lib64/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtime_genoff.so:google \
     vendor/google_devices/walleye/vendor/lib64/libtinycompress.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinycompress.so:google \
@@ -699,10 +716,12 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/lib64/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxml.so:google \
     vendor/google_devices/walleye/vendor/lib64/mediacas/libclearkeycasplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediacas/libclearkeycasplugin.so:google \
     vendor/google_devices/walleye/vendor/lib64/mediadrm/libdrmclearkeyplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libdrmclearkeyplugin.so:google \
+    vendor/google_devices/walleye/vendor/lib64/nfc_nci_nxp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nfc_nci_nxp.so:google \
     vendor/google_devices/walleye/vendor/lib64/sensors.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.msm8998.so:google \
     vendor/google_devices/walleye/vendor/lib64/soundfx/libaudiopreprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libaudiopreprocessing.so:google \
     vendor/google_devices/walleye/vendor/lib64/soundfx/libbundlewrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libbundlewrapper.so:google \
     vendor/google_devices/walleye/vendor/lib64/soundfx/libdownmix.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libdownmix.so:google \
+    vendor/google_devices/walleye/vendor/lib64/soundfx/libdynproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libdynproc.so:google \
     vendor/google_devices/walleye/vendor/lib64/soundfx/libeffectproxy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libeffectproxy.so:google \
     vendor/google_devices/walleye/vendor/lib64/soundfx/libldnhncr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libldnhncr.so:google \
     vendor/google_devices/walleye/vendor/lib64/soundfx/libqcompostprocbundle.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcompostprocbundle.so:google \
@@ -712,13 +731,18 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/lib64/soundfx/libreverbwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libreverbwrapper.so:google \
     vendor/google_devices/walleye/vendor/lib64/soundfx/libvisualizer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libvisualizer.so:google \
     vendor/google_devices/walleye/vendor/lib64/soundfx/libvolumelistener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libvolumelistener.so:google \
+    vendor/google_devices/walleye/vendor/lib64/vendor.nxp.nxpese@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.nxpese@1.0.so:google \
+    vendor/google_devices/walleye/vendor/lib64/vendor.nxp.nxpnfc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.nxpnfc@1.0.so:google \
     vendor/google_devices/walleye/vendor/lib64/vendor.qti.atcmdfwd@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.atcmdfwd@1.0.so:google \
     vendor/google_devices/walleye/vendor/lib64/vendor.qti.qcril.am@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qcril.am@1.0.so:google \
     vendor/google_devices/walleye/vendor/lib/adsp_camera/libhalide_hexagon_remote_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/adsp_camera/libhalide_hexagon_remote_skel.so:google \
     vendor/google_devices/walleye/vendor/lib/camera.device@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@1.0-impl.so:google \
     vendor/google_devices/walleye/vendor/lib/camera.device@3.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.2-impl.so:google \
     vendor/google_devices/walleye/vendor/lib/camera.device@3.3-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.3-impl.so:google \
+    vendor/google_devices/walleye/vendor/lib/camera.device@3.4-external-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.4-external-impl.so:google \
+    vendor/google_devices/walleye/vendor/lib/camera.device@3.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.4-impl.so:google \
     vendor/google_devices/walleye/vendor/lib/com.qualcomm.qti.ims.radio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.ims.radio@1.0.so:google \
+    vendor/google_devices/walleye/vendor/lib/com.qualcomm.qti.ims.radio@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.ims.radio@1.1.so:google \
     vendor/google_devices/walleye/vendor/lib/com.qualcomm.qti.imsrtpservice@1.0-service-Impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.imsrtpservice@1.0-service-Impl.so:google \
     vendor/google_devices/walleye/vendor/lib/com.qualcomm.qti.imsrtpservice@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.imsrtpservice@1.0_vendor.so:google \
     vendor/google_devices/walleye/vendor/lib/com.qualcomm.qti.qcril.qcrilhook@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.qcril.qcrilhook@1.0.so:google \
@@ -731,13 +755,16 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/lib/dsp/chre_drv_modem.so:$(TARGET_COPY_OUT_VENDOR)/lib/dsp/chre_drv_modem.so:google \
     vendor/google_devices/walleye/vendor/lib/dsp/chre_drv_wifi.so:$(TARGET_COPY_OUT_VENDOR)/lib/dsp/chre_drv_wifi.so:google \
     vendor/google_devices/walleye/vendor/lib/dsp/chre_pal.so:$(TARGET_COPY_OUT_VENDOR)/lib/dsp/chre_pal.so:google \
+    vendor/google_devices/walleye/vendor/lib/dsp/elmyra.so:$(TARGET_COPY_OUT_VENDOR)/lib/dsp/elmyra.so:google \
     vendor/google_devices/walleye/vendor/lib/dsp/EtsiAmrWbPlusDecModule.so.1:$(TARGET_COPY_OUT_VENDOR)/lib/dsp/EtsiAmrWbPlusDecModule.so.1:google \
     vendor/google_devices/walleye/vendor/lib/dsp/EtsiEaacPlusEncAndCmnModule.so.1:$(TARGET_COPY_OUT_VENDOR)/lib/dsp/EtsiEaacPlusEncAndCmnModule.so.1:google \
     vendor/google_devices/walleye/vendor/lib/dsp/fastrpc_shell_0:$(TARGET_COPY_OUT_VENDOR)/lib/dsp/fastrpc_shell_0:google \
     vendor/google_devices/walleye/vendor/lib/dsp/fluence_voiceplus_module.so.1:$(TARGET_COPY_OUT_VENDOR)/lib/dsp/fluence_voiceplus_module.so.1:google \
     vendor/google_devices/walleye/vendor/lib/dsp/geofence.so:$(TARGET_COPY_OUT_VENDOR)/lib/dsp/geofence.so:google \
+    vendor/google_devices/walleye/vendor/lib/dsp/gesture.so:$(TARGET_COPY_OUT_VENDOR)/lib/dsp/gesture.so:google \
     vendor/google_devices/walleye/vendor/lib/dsp/HeaacDecoderModule.so.1:$(TARGET_COPY_OUT_VENDOR)/lib/dsp/HeaacDecoderModule.so.1:google \
     vendor/google_devices/walleye/vendor/lib/dsp/HpMp2DecoderModule.so.1:$(TARGET_COPY_OUT_VENDOR)/lib/dsp/HpMp2DecoderModule.so.1:google \
+    vendor/google_devices/walleye/vendor/lib/dsp/imu_cal.so:$(TARGET_COPY_OUT_VENDOR)/lib/dsp/imu_cal.so:google \
     vendor/google_devices/walleye/vendor/lib/dsp/libchre_slpi_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/dsp/libchre_slpi_skel.so:google \
     vendor/google_devices/walleye/vendor/lib/dsp/lowi_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/dsp/lowi_client.so:google \
     vendor/google_devices/walleye/vendor/lib/dsp/mmecns_module.so.1:$(TARGET_COPY_OUT_VENDOR)/lib/dsp/mmecns_module.so.1:google \
@@ -750,25 +777,17 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/lib/egl/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_adreno.so:google \
     vendor/google_devices/walleye/vendor/lib/egl/libq3dtools_esx.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_esx.so:google \
     vendor/google_devices/walleye/vendor/lib/hw/activity_recognition.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/activity_recognition.msm8998.so:google \
-    vendor/google_devices/walleye/vendor/lib/hw/android.hardware.audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio@2.0-impl.so:google \
-    vendor/google_devices/walleye/vendor/lib/hw/android.hardware.audio.effect@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio.effect@2.0-impl.so:google \
-    vendor/google_devices/walleye/vendor/lib/hw/android.hardware.bluetooth@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth@1.0-impl.so:google \
-    vendor/google_devices/walleye/vendor/lib/hw/android.hardware.boot@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.boot@1.0-impl.so:google \
+    vendor/google_devices/walleye/vendor/lib/hw/android.hardware.audio@4.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio@4.0-impl.so:google \
+    vendor/google_devices/walleye/vendor/lib/hw/android.hardware.audio.effect@4.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio.effect@4.0-impl.so:google \
     vendor/google_devices/walleye/vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.camera.provider@2.4-impl.so:google \
-    vendor/google_devices/walleye/vendor/lib/hw/android.hardware.contexthub@1.0-impl.generic.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.contexthub@1.0-impl.generic.so:google \
     vendor/google_devices/walleye/vendor/lib/hw/android.hardware.drm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.drm@1.0-impl.so:google \
     vendor/google_devices/walleye/vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so:google \
     vendor/google_devices/walleye/vendor/lib/hw/android.hardware.gnss@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gnss@1.0-impl-qti.so:google \
-    vendor/google_devices/walleye/vendor/lib/hw/android.hardware.graphics.allocator@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.graphics.allocator@2.0-impl.so:google \
-    vendor/google_devices/walleye/vendor/lib/hw/android.hardware.graphics.composer@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.graphics.composer@2.1-impl.so:google \
     vendor/google_devices/walleye/vendor/lib/hw/android.hardware.graphics.mapper@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.graphics.mapper@2.0-impl.so:google \
     vendor/google_devices/walleye/vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.keymaster@3.0-impl-qti.so:google \
-    vendor/google_devices/walleye/vendor/lib/hw/android.hardware.light@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.light@2.0-impl.so:google \
     vendor/google_devices/walleye/vendor/lib/hw/android.hardware.memtrack@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.memtrack@1.0-impl.so:google \
-    vendor/google_devices/walleye/vendor/lib/hw/android.hardware.nfc@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.nfc@1.0-impl.so:google \
     vendor/google_devices/walleye/vendor/lib/hw/android.hardware.renderscript@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.renderscript@1.0-impl.so:google \
-    vendor/google_devices/walleye/vendor/lib/hw/android.hardware.sensors@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.sensors@1.0-impl.so:google \
-    vendor/google_devices/walleye/vendor/lib/hw/android.hardware.soundtrigger@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.soundtrigger@2.0-impl.so:google \
+    vendor/google_devices/walleye/vendor/lib/hw/android.hardware.soundtrigger@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.soundtrigger@2.1-impl.so:google \
     vendor/google_devices/walleye/vendor/lib/hw/audio.primary.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.default.so:google \
     vendor/google_devices/walleye/vendor/lib/hw/audio.primary.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.msm8998.so:google \
     vendor/google_devices/walleye/vendor/lib/hw/audio.r_submix.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.r_submix.default.so:google \
@@ -781,7 +800,6 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/lib/hw/lights.walleye.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/lights.walleye.so:google \
     vendor/google_devices/walleye/vendor/lib/hw/local_time.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/local_time.default.so:google \
     vendor/google_devices/walleye/vendor/lib/hw/memtrack.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/memtrack.msm8998.so:google \
-    vendor/google_devices/walleye/vendor/lib/hw/nfc_nci.walleye.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/nfc_nci.walleye.so:google \
     vendor/google_devices/walleye/vendor/lib/hw/power.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/power.default.so:google \
     vendor/google_devices/walleye/vendor/lib/hw/sensors.vl530l0.tof.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sensors.vl530l0.tof.so:google \
     vendor/google_devices/walleye/vendor/lib/hw/sound_trigger.primary.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.msm8998.so:google \
@@ -803,7 +821,6 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/lib/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioalsa.so:google \
     vendor/google_devices/walleye/vendor/lib/libavservices_minijail_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libavservices_minijail_vendor.so:google \
     vendor/google_devices/walleye/vendor/lib/libbccQTI.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbccQTI.so:google \
-    vendor/google_devices/walleye/vendor/lib/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbtnv.so:google \
     vendor/google_devices/walleye/vendor/lib/libbt-vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbt-vendor.so:google \
     vendor/google_devices/walleye/vendor/lib/libC2D2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libC2D2.so:google \
     vendor/google_devices/walleye/vendor/lib/libc2d30-a3xx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d30-a3xx.so:google \
@@ -868,10 +885,11 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/lib/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsi_netctrl.so:google \
     vendor/google_devices/walleye/vendor/lib/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsutils.so:google \
     vendor/google_devices/walleye/vendor/lib/libeaselcomm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libeaselcomm.so:google \
-    vendor/google_devices/walleye/vendor/lib/libeaselcontrol.so:$(TARGET_COPY_OUT_VENDOR)/lib/libeaselcontrol.so:google \
+    vendor/google_devices/walleye/vendor/lib/libeaselcontrol.amber.so:$(TARGET_COPY_OUT_VENDOR)/lib/libeaselcontrol.amber.so:google \
     vendor/google_devices/walleye/vendor/lib/libeffectsconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libeffectsconfig.so:google \
     vendor/google_devices/walleye/vendor/lib/libeffects.so:$(TARGET_COPY_OUT_VENDOR)/lib/libeffects.so:google \
     vendor/google_devices/walleye/vendor/lib/libeglc2d.so:$(TARGET_COPY_OUT_VENDOR)/lib/libeglc2d.so:google \
+    vendor/google_devices/walleye/vendor/lib/libelmyraproto.so:$(TARGET_COPY_OUT_VENDOR)/lib/libelmyraproto.so:google \
     vendor/google_devices/walleye/vendor/lib/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvopt.so:google \
     vendor/google_devices/walleye/vendor/lib/libflash_pmic.so:$(TARGET_COPY_OUT_VENDOR)/lib/libflash_pmic.so:google \
     vendor/google_devices/walleye/vendor/lib/libflp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libflp.so:google \
@@ -903,7 +921,6 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/lib/libhdrplusclientimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdrplusclientimpl.so:google \
     vendor/google_devices/walleye/vendor/lib/libhdrplusclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdrplusclient.so:google \
     vendor/google_devices/walleye/vendor/lib/libhdrplusmessenger.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdrplusmessenger.so:google \
-    vendor/google_devices/walleye/vendor/lib/libhwc2on1adapter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhwc2on1adapter.so:google \
     vendor/google_devices/walleye/vendor/lib/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libidl.so:google \
     vendor/google_devices/walleye/vendor/lib/lib-imsdpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsdpl.so:google \
     vendor/google_devices/walleye/vendor/lib/lib-imsqimf.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsqimf.so:google \
@@ -922,7 +939,6 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/lib/liblistensoundmodel2.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblistensoundmodel2.so:google \
     vendor/google_devices/walleye/vendor/lib/libllvm-glnext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvm-glnext.so:google \
     vendor/google_devices/walleye/vendor/lib/libllvm-qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvm-qcom.so:google \
-    vendor/google_devices/walleye/vendor/lib/libllvm-qgl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvm-qgl.so:google \
     vendor/google_devices/walleye/vendor/lib/libloc_api_v02.so:$(TARGET_COPY_OUT_VENDOR)/lib/libloc_api_v02.so:google \
     vendor/google_devices/walleye/vendor/lib/liblocation_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblocation_api.so:google \
     vendor/google_devices/walleye/vendor/lib/libloc_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libloc_core.so:google \
@@ -934,8 +950,6 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/lib/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblqe.so:google \
     vendor/google_devices/walleye/vendor/lib/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdmdetect.so:google \
     vendor/google_devices/walleye/vendor/lib/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdsprpc.so:google \
-    vendor/google_devices/walleye/vendor/lib/libmediacodecservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmediacodecservice.so:google \
-    vendor/google_devices/walleye/vendor/lib/libminijail_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libminijail_vendor.so:google \
     vendor/google_devices/walleye/vendor/lib/libmmcamera2_c2d_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_c2d_module.so:google \
     vendor/google_devices/walleye/vendor/lib/libmmcamera2_cpp_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_cpp_module.so:google \
     vendor/google_devices/walleye/vendor/lib/libmmcamera2_iface_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_iface_modules.so:google \
@@ -1030,6 +1044,7 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/lib/libOmxVenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxVenc.so:google \
     vendor/google_devices/walleye/vendor/lib/libpdmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpdmapper.so:google \
     vendor/google_devices/walleye/vendor/lib/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperipheral_client.so:google \
+    vendor/google_devices/walleye/vendor/lib/libpn553_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpn553_fw.so:google \
     vendor/google_devices/walleye/vendor/lib/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcci_legacy.so:google \
     vendor/google_devices/walleye/vendor/lib/libqcmaputils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcmaputils.so:google \
     vendor/google_devices/walleye/vendor/lib/libqdi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdi.so:google \
@@ -1080,9 +1095,6 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/lib/libsdmextension.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdmextension.so:google \
     vendor/google_devices/walleye/vendor/lib/libsdmutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdmutils.so:google \
     vendor/google_devices/walleye/vendor/lib/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdsprpc.so:google \
-    vendor/google_devices/walleye/vendor/lib/lib-sec-disp.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-sec-disp.so:google \
-    vendor/google_devices/walleye/vendor/lib/libsecureui.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecureui.so:google \
-    vendor/google_devices/walleye/vendor/lib/libsecureui_svcsock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecureui_svcsock.so:google \
     vendor/google_devices/walleye/vendor/lib/libsensor1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensor1.so:google \
     vendor/google_devices/walleye/vendor/lib/libsensorndkbridge.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorndkbridge.so:google \
     vendor/google_devices/walleye/vendor/lib/libsensor_reg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensor_reg.so:google \
@@ -1091,7 +1103,6 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/lib/libsns_low_lat_stream_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_low_lat_stream_stub.so:google \
     vendor/google_devices/walleye/vendor/lib/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssd.so:google \
     vendor/google_devices/walleye/vendor/lib/libstagefrighthw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefrighthw.so:google \
-    vendor/google_devices/walleye/vendor/lib/libStDrvInt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libStDrvInt.so:google \
     vendor/google_devices/walleye/vendor/lib/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsystem_health_mon.so:google \
     vendor/google_devices/walleye/vendor/lib/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtime_genoff.so:google \
     vendor/google_devices/walleye/vendor/lib/libtinycompress.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinycompress.so:google \
@@ -1111,6 +1122,7 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/lib/modules/synaptics_dsx_core_htc.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/synaptics_dsx_core_htc.ko:google \
     vendor/google_devices/walleye/vendor/lib/modules/synaptics_dsx_fw_update_htc.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/synaptics_dsx_fw_update_htc.ko:google \
     vendor/google_devices/walleye/vendor/lib/modules/synaptics_dsx_rmi_dev_htc.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/synaptics_dsx_rmi_dev_htc.ko:google \
+    vendor/google_devices/walleye/vendor/lib/modules/wlan.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/wlan.ko:google \
     vendor/google_devices/walleye/vendor/lib/rfsa/adsp/libapps_mem_heap.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libapps_mem_heap.so:google \
     vendor/google_devices/walleye/vendor/lib/rfsa/adsp/libdspCV_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libdspCV_skel.so:google \
     vendor/google_devices/walleye/vendor/lib/rfsa/adsp/libexternal_dog_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libexternal_dog_skel.so:google \
@@ -1120,6 +1132,7 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/lib/soundfx/libaudiopreprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libaudiopreprocessing.so:google \
     vendor/google_devices/walleye/vendor/lib/soundfx/libbundlewrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libbundlewrapper.so:google \
     vendor/google_devices/walleye/vendor/lib/soundfx/libdownmix.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libdownmix.so:google \
+    vendor/google_devices/walleye/vendor/lib/soundfx/libdynproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libdynproc.so:google \
     vendor/google_devices/walleye/vendor/lib/soundfx/libeffectproxy.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libeffectproxy.so:google \
     vendor/google_devices/walleye/vendor/lib/soundfx/libfmas.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libfmas.so:google \
     vendor/google_devices/walleye/vendor/lib/soundfx/libldnhncr.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libldnhncr.so:google \
@@ -1134,6 +1147,7 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/mbn/mcfg/configs/mcfg_sw/generic/APAC/Reliance/Commercial/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/mbn/mcfg/configs/mcfg_sw/generic/APAC/Reliance/Commercial/mcfg_sw.mbn:google \
     vendor/google_devices/walleye/vendor/mbn/mcfg/configs/mcfg_sw/generic/AUS/Default/VoLTE/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/mbn/mcfg/configs/mcfg_sw/generic/AUS/Default/VoLTE/mcfg_sw.mbn:google \
     vendor/google_devices/walleye/vendor/mbn/mcfg/configs/mcfg_sw/generic/AUS/Telstra/VoLTE/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/mbn/mcfg/configs/mcfg_sw/generic/AUS/Telstra/VoLTE/mcfg_sw.mbn:google \
+    vendor/google_devices/walleye/vendor/mbn/mcfg/configs/mcfg_sw/generic/common/PixelLite/Commercial/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/mbn/mcfg/configs/mcfg_sw/generic/common/PixelLite/Commercial/mcfg_sw.mbn:google \
     vendor/google_devices/walleye/vendor/mbn/mcfg/configs/mcfg_sw/generic/common/WildCard/WildCard/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/mbn/mcfg/configs/mcfg_sw/generic/common/WildCard/WildCard/mcfg_sw.mbn:google \
     vendor/google_devices/walleye/vendor/mbn/mcfg/configs/mcfg_sw/generic/EU/DT/VoLTE/Commercial/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/mbn/mcfg/configs/mcfg_sw/generic/EU/DT/VoLTE/Commercial/mcfg_sw.mbn:google \
     vendor/google_devices/walleye/vendor/mbn/mcfg/configs/mcfg_sw/generic/EU/EE/Commercial/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/mbn/mcfg/configs/mcfg_sw/generic/EU/EE/Commercial/mcfg_sw.mbn:google \

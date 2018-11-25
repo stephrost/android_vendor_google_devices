@@ -1,10 +1,10 @@
-service oemlock_hal /vendor/bin/hw/android.hardware.oemlock@1.0-service
+service vendor.oemlock_hal /vendor/bin/hw/android.hardware.oemlock@1.0-service
     class hal
     user system
     group system
 
 # Provides the glue from the HAL interface to the bootctl impl.
-service oemlock_bridge /vendor/bin/oemlock-bridge
+service vendor.oemlock_bridge /vendor/bin/oemlock-bridge
     class hal
     user root
     group system

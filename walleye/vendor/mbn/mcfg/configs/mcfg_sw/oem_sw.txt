@@ -23,3 +23,4 @@ mcfg_sw/generic/AUS/Default/VoLTE/mcfg_sw.mbn
 mcfg_sw/generic/EU/Telefonica/Non_VoLTE/UK/mcfg_sw.mbn
 mcfg_sw/generic/EU/ID/Non_VoLTE/UK/mcfg_sw.mbn
 mcfg_sw/generic/NA/Koodo/non_VoLTE/mcfg_sw.mbn
+mcfg_sw/generic/common/PixelLite/Commercial/mcfg_sw.mbn
