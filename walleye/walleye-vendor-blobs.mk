@@ -1,9 +1,8 @@
-# [2018-11-24] Auto-generated file, do not edit
+# [2018-11-25] Auto-generated file, do not edit
 
 PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/proprietary/bin/move_widevine_data.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/move_widevine_data.sh:google \
     vendor/google_devices/walleye/proprietary/bin/ramoops:$(TARGET_COPY_OUT_SYSTEM)/bin/ramoops:google \
-    vendor/google_devices/walleye/proprietary/etc/ambient/matcher_tah.leveldb:$(TARGET_COPY_OUT_SYSTEM)/etc/ambient/matcher_tah.leveldb:google \
     vendor/google_devices/walleye/proprietary/etc/cne/Nexus/ATT/ATT_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/ATT/ATT_profiles.xml:google \
     vendor/google_devices/walleye/proprietary/etc/cne/Nexus/ROW/ROW_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/ROW/ROW_profiles.xml:google \
     vendor/google_devices/walleye/proprietary/etc/cne/Nexus/VZW/VZW_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/VZW/VZW_profiles.xml:google \
@@ -13,30 +12,11 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/proprietary/etc/firmware/music_detector.sound_model:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/music_detector.sound_model:google \
     vendor/google_devices/walleye/proprietary/etc/old-apns-conf.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/old-apns-conf.xml:google \
     vendor/google_devices/walleye/proprietary/etc/permissions/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.telephony.euicc.xml:google \
-    vendor/google_devices/walleye/proprietary/etc/permissions/com.android.omadm.service.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.android.omadm.service.xml:google \
-    vendor/google_devices/walleye/proprietary/etc/permissions/com.android.sdm.plugins.connmo.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.android.sdm.plugins.connmo.xml:google \
-    vendor/google_devices/walleye/proprietary/etc/permissions/com.android.sdm.plugins.sprintdm.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.android.sdm.plugins.sprintdm.xml:google \
-    vendor/google_devices/walleye/proprietary/etc/permissions/com.android.vzwomatrigger.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.android.vzwomatrigger.xml:google \
-    vendor/google_devices/walleye/proprietary/etc/permissions/com.customermobile.preload.vzw.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.customermobile.preload.vzw.xml:google \
     vendor/google_devices/walleye/proprietary/etc/permissions/com.google.android.hardwareinfo.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.google.android.hardwareinfo.xml:google \
-    vendor/google_devices/walleye/proprietary/etc/permissions/com.verizon.apn.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.verizon.apn.xml:google \
-    vendor/google_devices/walleye/proprietary/etc/permissions/com.verizon.embms.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.verizon.embms.xml:google \
-    vendor/google_devices/walleye/proprietary/etc/permissions/com.verizon.llkagent.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.verizon.llkagent.xml:google \
-    vendor/google_devices/walleye/proprietary/etc/permissions/com.verizon.provider.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.verizon.provider.xml:google \
-    vendor/google_devices/walleye/proprietary/etc/permissions/com.verizon.services.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.verizon.services.xml:google \
-    vendor/google_devices/walleye/proprietary/etc/permissions/features-verizon.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/features-verizon.xml:google \
-    vendor/google_devices/walleye/proprietary/etc/permissions/obdm_permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/obdm_permissions.xml:google \
-    vendor/google_devices/walleye/proprietary/etc/permissions/privapp-permissions-google.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-google.xml:google \
     vendor/google_devices/walleye/proprietary/etc/permissions/privapp-permissions-wahoo.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-wahoo.xml:google \
-    vendor/google_devices/walleye/proprietary/etc/permissions/vzw_mvs_permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vzw_mvs_permissions.xml:google \
     vendor/google_devices/walleye/proprietary/etc/sysconfig/framework-sysconfig.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/framework-sysconfig.xml:google \
-    vendor/google_devices/walleye/proprietary/etc/sysconfig/google_build.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/google_build.xml:google \
-    vendor/google_devices/walleye/proprietary/etc/sysconfig/google_vr_build.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/google_vr_build.xml:google \
-    vendor/google_devices/walleye/proprietary/etc/sysconfig/google.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/google.xml:google \
     vendor/google_devices/walleye/proprietary/etc/sysconfig/nexus.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/nexus.xml:google \
-    vendor/google_devices/walleye/proprietary/etc/sysconfig/pixel_2017_exclusive.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/pixel_2017_exclusive.xml:google \
     vendor/google_devices/walleye/proprietary/etc/sysconfig/pixel_experience_2017.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/pixel_experience_2017.xml:google \
-    vendor/google_devices/walleye/proprietary/etc/sysconfig/whitelist_com.android.omadm.service.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/whitelist_com.android.omadm.service.xml:google \
     vendor/google_devices/walleye/proprietary/lib64/com.qualcomm.qti.ims.radio@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/com.qualcomm.qti.ims.radio@1.0.so:google \
     vendor/google_devices/walleye/proprietary/lib64/com.qualcomm.qti.imsrtpservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/com.qualcomm.qti.imsrtpservice@1.0.so:google \
     vendor/google_devices/walleye/proprietary/lib64/com.qualcomm.qti.qcril.qcrilhook@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/com.qualcomm.qti.qcril.qcrilhook@1.0.so:google \
@@ -322,16 +302,12 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy:google \
     vendor/google_devices/walleye/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config:google \
     vendor/google_devices/walleye/vendor/etc/selinux/plat_pub_versioned.cil:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/plat_pub_versioned.cil:google \
-    vendor/google_devices/walleye/vendor/etc/selinux/plat_sepolicy_vers.txt:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/plat_sepolicy_vers.txt:google \
-    vendor/google_devices/walleye/vendor/etc/selinux/precompiled_sepolicy:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/precompiled_sepolicy:google \
-    vendor/google_devices/walleye/vendor/etc/selinux/precompiled_sepolicy.plat_and_mapping.sha256:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/precompiled_sepolicy.plat_and_mapping.sha256:google \
     vendor/google_devices/walleye/vendor/etc/selinux/vendor_file_contexts:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/vendor_file_contexts:google \
     vendor/google_devices/walleye/vendor/etc/selinux/vendor_hwservice_contexts:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/vendor_hwservice_contexts:google \
     vendor/google_devices/walleye/vendor/etc/selinux/vendor_mac_permissions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/vendor_mac_permissions.xml:google \
     vendor/google_devices/walleye/vendor/etc/selinux/vendor_property_contexts:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/vendor_property_contexts:google \
     vendor/google_devices/walleye/vendor/etc/selinux/vendor_seapp_contexts:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/vendor_seapp_contexts:google \
     vendor/google_devices/walleye/vendor/etc/selinux/vendor_sepolicy.cil:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/vendor_sepolicy.cil:google \
-    vendor/google_devices/walleye/vendor/etc/selinux/vndservice_contexts:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/vndservice_contexts:google \
     vendor/google_devices/walleye/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf:google \
     vendor/google_devices/walleye/vendor/etc/sensors/sensor_def_wahoo.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_wahoo.conf:google \
     vendor/google_devices/walleye/vendor/etc/sound_trigger_mixer_paths_wcd9340.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths_wcd9340.xml:google \
@@ -1186,9 +1162,6 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/vendor/usr/idc/synaptics_dsxv26.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/synaptics_dsxv26.idc:google \
     vendor/google_devices/walleye/vendor/usr/idc/vr-virtual-touchpad-0.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/vr-virtual-touchpad-0.idc:google \
     vendor/google_devices/walleye/vendor/usr/idc/vr-virtual-touchpad-1.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/vr-virtual-touchpad-1.idc:google
-
-PRODUCT_COPY_FILES += \
-    vendor/google_devices/walleye/proprietary/priv-app/MyVerizonServices/lib/arm64/libmotricity.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MyVerizonServices/lib/arm64/libmotricity.so:google
 
 PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/proprietary/lib64/libimsmedia_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libimsmedia_jni.so:google \
