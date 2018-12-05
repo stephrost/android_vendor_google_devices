@@ -1,3 +1,0 @@
-require board=walleye
-require version-bootloader=mw8998-002.0073.02
-require version-baseband=g8998-00253-1809191716
