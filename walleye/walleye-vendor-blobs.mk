@@ -1,4 +1,4 @@
-# [2018-11-24] Auto-generated file, do not edit
+# [2018-12-05] Auto-generated file, do not edit
 
 PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/proprietary/bin/move_widevine_data.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/move_widevine_data.sh:google \
@@ -1191,6 +1191,6 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/walleye/proprietary/priv-app/MyVerizonServices/lib/arm64/libmotricity.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MyVerizonServices/lib/arm64/libmotricity.so:google
 
 PRODUCT_COPY_FILES += \
-    vendor/google_devices/walleye/proprietary/lib64/libimsmedia_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libimsmedia_jni.so:google \
-    vendor/google_devices/walleye/proprietary/lib64/libimscamera_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libimscamera_jni.so:google
+    vendor/google_devices/walleye/proprietary/lib64/libimscamera_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libimscamera_jni.so:google \
+    vendor/google_devices/walleye/proprietary/lib64/libimsmedia_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libimsmedia_jni.so:google
 

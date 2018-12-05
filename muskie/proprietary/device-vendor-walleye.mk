@@ -1,4 +1,4 @@
-# [2018-11-24] Auto-generated file, do not edit
+# [2018-12-05] Auto-generated file, do not edit
 
 $(call inherit-product, vendor/google_devices/walleye/walleye-vendor-blobs.mk)
 
@@ -55,8 +55,8 @@ PRODUCT_PACKAGES += \
 
 # Prebuilt APKs libs symlinks from 'proprietary/app'
 PRODUCT_PACKAGES += \
-    libimsmedia_jni_64.so \
-    libimscamera_jni_64.so
+    libimscamera_jni_64.so \
+    libimsmedia_jni_64.so
 
 # Prebuilt APKs/JARs from 'proprietary/framework'
 PRODUCT_PACKAGES += \
